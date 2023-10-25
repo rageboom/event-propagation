@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -15,36 +16,70 @@
             <h2>Event Bubble</h2>
             <article>
               <div class="box">
-                <div name='grand-parents' class="grand-parents node">
+                <div name="grand-parents" class="grand-parents node">
                   <h3>Grand Parents &#8593;</h3>
-                  <div name='parents' class="parents node">
+                  <div name="parents" class="parents node">
                     <h3>Parents &#8593;</h3>
-                    <div name='children' class="children node">
+                    <div name="children" class="children node">
                       <h3>Children &#8593;</h3>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="log">
-              </div>
+              <div class="log"></div>
             </article>
           </section>
           <section id="capturing">
             <h2>Event Capturing</h2>
             <article>
               <div class="box">
-                <div name='grand-parents' class="grand-parents node">
+                <div name="grand-parents" class="grand-parents node">
                   <h3>Grand Parents &#8595;</h3>
-                  <div name='parents' class="parents node">
+                  <div name="parents" class="parents node">
                     <h3>Parents &#8595;</h3>
-                    <div name='children' class="children node">
+                    <div name="children" class="children node">
                       <h3>Children &#8595;</h3>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="log">
+              <div class="log"></div>
+            </article>
+          </section>
+        </article>
+        <article class="basic-event">
+          <section id="stopPropagation">
+            <h2>stopPropagation</h2>
+            <article>
+              <div class="box">
+                <div name="grand-parents" class="grand-parents node">
+                  <h3>Grand Parents &#8593;</h3>
+                  <div name="parents" class="parents node">
+                    <h3>Parents &#8593;</h3>
+                    <div name="children" class="children node">
+                      <h3>Children &#8593;</h3>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="log"></div>
+            </article>
+          </section>
+          <section id="stopImmediatePropagation">
+            <h2>stopImmediatePropagation</h2>
+            <article>
+              <div class="box">
+                <div name="grand-parents" class="grand-parents node">
+                  <h3>Grand Parents &#8595;</h3>
+                  <div name="parents" class="parents node">
+                    <h3>Parents &#8595;</h3>
+                    <div name="children" class="children node">
+                      <h3>Children &#8595;</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="log"></div>
             </article>
           </section>
         </article>
